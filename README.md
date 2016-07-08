@@ -2,10 +2,10 @@
 
 Copyright © 2016 [NUBOMEDIA]. Licensed under [LGPL v2.1 License].
 
-nubomedia-cdn-tutorial
+nubomedia-repository-tutorial
 =============================
 
-NUBOMEDIA Tutorial: WebRTC with recording capabilities to repository and publishing on user's Content Distribution Network (CDN).
+NUBOMEDIA Tutorial: WebRTC with recording capabilities to repository.
 
 What is NUBOMEDIA
 -----------------
@@ -85,7 +85,7 @@ Support
 The NUBOMEDIA community provides support through the [NUBOMEDIA Public Mailing List].
 
 [Development Guide]: http://nubomedia.readthedocs.org/
-[GitHub Issues]: https://github.com/nubomedia/nubomedia-cdn-tutorial/issues
+[GitHub Issues]: https://github.com/nubomedia/nubomedia-repository-tutorial/issues
 [GitHub NUBOMEDIA Group]: https://github.com/nubomedia
 [LGPL v2.1 License]: http://www.gnu.org/licenses/lgpl-2.1.html
 [NUBOMEDIA Logo]: http://www.nubomedia.eu/sites/default/files/nubomedia_logo-small.png
