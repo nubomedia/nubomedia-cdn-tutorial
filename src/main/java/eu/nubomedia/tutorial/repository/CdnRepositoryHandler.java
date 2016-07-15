@@ -159,11 +159,9 @@ public class CdnRepositoryHandler extends TextWebSocketHandler {
 	private void publish(final WebSocketSession session, JsonObject jsonMessage){
 		UserSession user = users.get(session.getId());
 
-		if(user != null){
-			
+		if(user != null){			
 			Video publishedVideo = null;
 			try {
-
 				//Get repository item URL
 				String repoURL = user.getRepositoryItemURL();
 
