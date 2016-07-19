@@ -298,6 +298,7 @@ function publishResponse(message) {
 function publishEnd(){
 	setState(POST_CALL);
 	hideSpinner(videoOutput);
+	$('#publishModal').modal('hide');
 }
 
 

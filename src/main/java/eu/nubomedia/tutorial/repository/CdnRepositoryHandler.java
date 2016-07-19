@@ -209,7 +209,11 @@ public class CdnRepositoryHandler extends TextWebSocketHandler {
 					}        	
 				}); 							
 			} catch (Exception e) {
-				// TODO: handle exception
+				log.error("Exception publishing session", e);
+				JsonObject resp = new JsonObject();
+				resp.addProperty("id", "publishFinished");
+				resp.addProperty("msg", "Error on publishing session: "+ e.getClass().getSimpleName() + ": " + e.getMessage());				
+				sendMessage(session, new TextMessage(resp.toString()));
 			}
 			finally {
 				if(publishedVideo!=null)

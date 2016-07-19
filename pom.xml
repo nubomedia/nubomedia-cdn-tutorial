@@ -48,7 +48,7 @@
 		<!-- Nubomedia -->
 		<nubomedia-media-client.version>1.0.2</nubomedia-media-client.version>
 		<nubomedia-repository-client.version>1.0</nubomedia-repository-client.version>
-		<nubomedia-cdn-client.version>0.0.7</nubomedia-cdn-client.version>
+		<nubomedia-cdn-client.version>0.0.8</nubomedia-cdn-client.version>
 		<!-- Main class -->
 		<start-class>eu.nubomedia.tutorial.repository.CdnApp</start-class>		
 	</properties>
