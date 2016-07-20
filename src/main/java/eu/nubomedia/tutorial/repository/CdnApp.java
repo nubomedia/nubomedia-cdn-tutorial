@@ -35,6 +35,7 @@ import de.fhg.fokus.nubomedia.cdn.provider.youtube.Auth;
  * WebRTC in loopback with recording in repository capabilities main class.
  *
  * @author Boni Garcia (boni.garcia@urjc.es)
+ * @author Alice Cheambe (alice.cheambe@fokus.fraunhofe.de)
  * @since 6.4.1
  */
 @SpringBootApplication

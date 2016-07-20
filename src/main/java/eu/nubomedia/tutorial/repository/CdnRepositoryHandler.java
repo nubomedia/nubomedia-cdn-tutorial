@@ -15,12 +15,10 @@
 package eu.nubomedia.tutorial.repository;
 
 import java.io.IOException;
-import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.kurento.client.internal.NotEnoughResourcesException;
 import org.kurento.repository.RepositoryClient;
-import org.kurento.repository.service.pojo.RepositoryItemPlayer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +27,6 @@ import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
-import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.googleapis.media.MediaHttpUploader;
 import com.google.api.client.googleapis.media.MediaHttpUploaderProgressListener;
 import com.google.api.services.youtube.model.Video;
@@ -43,6 +40,7 @@ import de.fhg.fokus.nubomedia.cdn.Schemes;
  * Recording in repository handler (application and media logic).
  *
  * @author Boni Garcia (boni.garcia@urjc.es)
+ * @author Alice Cheambe (alice.cheambe@fokus.fraunhofe.de)
  * @since 6.4.1
  */
 public class CdnRepositoryHandler extends TextWebSocketHandler {

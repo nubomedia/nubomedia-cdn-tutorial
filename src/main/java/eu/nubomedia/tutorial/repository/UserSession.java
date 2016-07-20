@@ -187,41 +187,7 @@ public class UserSession {
 	  if(repositoryItemRecorder != null)		  
 	  {
 		  RepositoryItemPlayer itemPlayer = repositoryClient.getReadEndpoint(repositoryItemRecorder.getId());
-		  return itemPlayer.getUrl();
-		// KurentoClient
-//		    kurentoClient = KurentoClient.create();
-//		    log.info("Created kurentoClient (session {})", sessionId);
-//
-//		    // Media pipeline
-//		    mediaPipeline = kurentoClient.createMediaPipeline();
-//		    log.info("Created Media Pipeline for playing {} (session {})", mediaPipeline.getId(),
-//		        sessionId);
-//
-//		    // Repository item (player)
-//		    RepositoryItemPlayer repositoryItemPlayer = null;
-//		    try {
-//
-//		      // Guard time for repository to finish storing media
-//		      long diff = System.currentTimeMillis() - stopTimestamp;
-//		      if (diff >= 0 && diff < REPOSITORY_GUARD_TIME_MS) {
-//		        log.info(
-//		            "Waiting for {}ms before requesting the repository read endpoint "
-//		                + "(requires {}ms before upload is considered terminated "
-//		                + "and only {}ms have passed)",
-//		            REPOSITORY_GUARD_TIME_MS - diff, REPOSITORY_GUARD_TIME_MS, diff);
-//		        Thread.sleep(REPOSITORY_GUARD_TIME_MS - diff);
-//		      }
-//		      repositoryItemPlayer = repositoryClient.getReadEndpoint(repositoryItemRecorder.getId());
-//
-//		    } catch (Exception e) {
-//		      log.warn("Exception creating repositoryItemPlayer", e);
-//
-//		      // This code allows to run the demo in local without a repository server
-//		      repositoryItemPlayer = new RepositoryItemPlayer();
-//		      repositoryItemPlayer.setId(repositoryItemRecorder.getId());
-//		      repositoryItemPlayer.setUrl(repositoryItemRecorder.getUrl());
-//		    }
-//		    return repositoryItemPlayer.getUrl();
+		  return itemPlayer.getUrl();		
 	  }
 	  else
 		  return null;
