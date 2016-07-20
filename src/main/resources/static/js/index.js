@@ -57,6 +57,7 @@ function setState(nextState) {
 		disableButton('#start');
 		enableButton('#stop', 'stop()');
 		disableButton('#play');
+		disableButton('#share');
 		break;
 	case POST_CALL:
 		enableButton('#start', 'start()');
