@@ -12,3 +12,5 @@ log.xml
 .externalToolBuilders
 *.pyc
 *bower_components/
+*.iml
+.idea/*

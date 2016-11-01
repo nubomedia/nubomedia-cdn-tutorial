@@ -9,7 +9,7 @@
   "moduleType": [
     "globals"
   ],
-  "license": "LGPL",
+  "license": "Apache 2.0",
   "homepage": "http://www.nubomedia.eu",
   "private": true,
   "ignore": [
